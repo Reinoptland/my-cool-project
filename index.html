@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        code {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body style="background-color: hotpink; color: white;">
     <h1>Commands to make a project and start tracking history</h1>
@@ -47,6 +53,24 @@
         <li>Add a remote</li>
         <li><code>git remote add origin ...url (NOT HTTPS!!111!)</code></li>
         <li><code>git push origin master</code></li>
+    </ol>
+
+    <h1> Steps to make a branch and update the master </h1>
+    <ol>
+        <li>Create a branch</li>
+        <li><code>git checkout -b feature/myfeaturename</code></li>
+        <li>Write some code</li>
+        <li>Commit your changes (see instruction above)</li>
+        <li>Push to the remote to a new branch</li>
+        <li><code>git push origin feature/myfeaturename</code></li>
+        <li>Go to github</li>
+        <li>Go to your project on github</li>
+        <li>Make a "Pullrequest" to master from the branch you pushed</li>
+        <li>Approve pullrequest</li>
+        <li>On you local git, switch back to master</li>
+        <li><code>git checkout master</code></li>
+        <li>Pull the changes from the remote</li>
+        <li><code>git pull origin master</code></li>
     </ol>
 </body>
 </html>
